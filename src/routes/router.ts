@@ -2,11 +2,8 @@ import express from "express";
 
 const app = express();
 
-app.get("/ping", ping);
-
-function ping(_: any, res: express.Response<string>) {
-  console.log("Sending ping");
+app.get("/ping", (_, res) => {
   res.send("pong");
-}
+});
 
 export default app;

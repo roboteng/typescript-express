@@ -1,8 +1,8 @@
-import supertest, { SuperAgentTest } from "supertest";
+import supertest from "supertest";
 
 import app from "./router";
 
-describe("Baic test", () => {
+describe("Basic test", () => {
   test("Responds on route", async () => {
     const agent = supertest.agent(app);
 
