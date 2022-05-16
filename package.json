@@ -5,8 +5,8 @@
   "main": "src/app.ts",
   "scripts": {
     "build": "tsc",
-    "lint": "npx eslint .",
-    "lint:fix": "npx eslint . --fix",
+    "lint": "npx eslint \"src/**\"",
+    "lint:fix": "npx eslint \"src/**\" --fix",
     "start": "npm run build && node ./build/app.js",
     "test": "npx jest"
   },

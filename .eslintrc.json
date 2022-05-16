@@ -3,6 +3,10 @@
         "browser": true,
         "es2021": true
     },
+    "ignorePatterns" :[
+      "build/",
+      "node_modules/"
+    ],
     "extends": [
     ],
     "parser": "@typescript-eslint/parser",
@@ -14,6 +18,7 @@
         "@typescript-eslint"
     ],
     "rules": {
-      "comma-dangle":"error"
+      "no-console": "warn",
+      "no-unused-vars":"error"
     }
 }
